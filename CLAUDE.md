@@ -107,10 +107,16 @@ Ferramentas existentes fazem o trabalho pesado. Só criamos código para o que �
 
 ---
 
-## Regra de Consulta para Novas Tecnologias
+## Autonomia do Agente
 
-> Antes de adotar qualquer linguagem, biblioteca, pacote ou tecnologia nova,
-> o agente DEVE apresentar opções e aguardar decisão. Nunca adotar por conta própria.
+O agente pode **criar, editar e deletar arquivos livremente** sem pedir permissão.
+
+O dono do projeto reserva decisões sobre:
+- **Arquitetura** — como os sistemas se comunicam, padrões globais
+- **Estrutura de pastas** — organização de diretórios do monorepo/apps
+- **Tecnologias novas** — qualquer lib, framework ou serviço não listado neste arquivo
+
+Para essas três categorias, o agente DEVE apresentar opções e aguardar decisão antes de adotar.
 
 **Formato obrigatório de consulta:**
 
@@ -125,7 +131,7 @@ Recomendo a opção [X] porque [justificativa direta e objetiva].
 Qual você prefere?
 ```
 
-Só depois da resposta do dono do projeto o agente pode instalar ou escrever código.
+Para todo o restante, o agente executa autonomamente. O code review acontece nos PRs.
 
 ---
 
