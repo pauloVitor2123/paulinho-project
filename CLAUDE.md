@@ -99,7 +99,7 @@ apps/blog-do-pv/
 | Imagens         | Cloudinary (free tier)                                    |
 | Vídeos          | YouTube / Vimeo embed                                     |
 | CDN / proxy     | Cloudflare (plano gratuito)                               |
-| Hosting         | Railway ou Render (free tier início)                      |
+| Hosting         | Vercel (Hobby plan, criadores do Next.js, zero config)    |
 | SSL             | Let's Encrypt (automático)                                |
 
 **Princípio fundador:** quanto menos código, melhor.
@@ -524,6 +524,7 @@ do Supabase está bloqueada na rede local. O workflow correto é:
 | Início | Zod para todas as validações | Validação runtime + tipos TypeScript inferidos automaticamente |
 | Início | Alias `@` para todos os imports | Legibilidade, facilidade de refatoração, consistência |
 | 2026-03 | Supabase como host do PostgreSQL | Free tier generoso, MCP nativo no Claude Code, painel visual, backups automáticos |
+| 2026-03 | Vercel para hosting (substituiu Railway/Render) | Feito pelos criadores do Next.js, suporte 100% às features (ISR, Edge, Image Opt.), Hobby plan gratuito, preview deployments por PR |
 | 2026-03 | Migrations aplicadas via MCP do Supabase (não via `drizzle-kit migrate`) | Porta 5432 bloqueada na rede local; MCP usa API REST (porta 443) e sempre funciona |
 
 ---
