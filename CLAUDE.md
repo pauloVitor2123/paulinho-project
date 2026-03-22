@@ -462,6 +462,41 @@ Variáveis sem prefixo são server-only.
 
 ---
 
+## Workflow de Migrations (Banco de Dados)
+
+O `drizzle-kit migrate` **não funciona diretamente** neste ambiente porque a porta 5432
+do Supabase está bloqueada na rede local. O workflow correto é:
+
+### A cada mudança de schema
+
+```
+1. Altere os arquivos em packages/db/src/schema/
+2. Gere o SQL da migration:
+   cd packages/db && npx drizzle-kit generate
+3. Peça ao agente para aplicar a migration via MCP do Supabase
+   (o agente usa mcp__claude_ai_Supabase__apply_migration)
+4. O agente também atualiza a tabela __drizzle_migrations no banco
+   para que o Drizzle reconheça o estado aplicado
+5. Commit dos arquivos gerados em packages/db/migrations/
+```
+
+### Detalhes técnicos
+
+- **Schema source of truth:** `packages/db/src/schema/` (TypeScript com Drizzle)
+- **Migration files:** `packages/db/migrations/` (SQL gerado pelo `drizzle-kit generate`, versionado no git)
+- **Tracking table:** `__drizzle_migrations` no banco (criada e mantida manualmente via MCP)
+- **`drizzle-kit generate`** pode ser rodado localmente — só lê o schema TypeScript, não precisa de banco
+- **`drizzle-kit migrate`** e **`drizzle-kit push`** requerem conexão direta na porta 5432 — **não usar**
+- **`drizzle-kit studio`** idem — **não usar**
+
+### Supabase project
+
+- **Project ID:** `hvctelkuekbymeffekwy`
+- **Host:** `db.hvctelkuekbymeffekwy.supabase.co`
+- **URL:** `https://hvctelkuekbymeffekwy.supabase.co`
+
+---
+
 ## Hurdles Documentados
 
 > Seção que cresce durante o projeto. Cada problema resolvido vira conhecimento permanente.
@@ -470,7 +505,7 @@ Variáveis sem prefixo são server-only.
 |----------|-------|---------|
 | Giscus não carrega em alguns browsers | Política de cookies de terceiros | Adicionar `data-loading="lazy"` e verificar configuração de iframe |
 | Open Graph não atualiza preview no LinkedIn | LinkedIn cacheia agressivamente | Usar LinkedIn Post Inspector para forçar re-fetch |
-| *(adicione aqui)* | *(causa)* | *(solução)* |
+| `drizzle-kit migrate` trava sem erro visível | Porta 5432 do Supabase bloqueada na rede local | Aplicar migrations via MCP do Supabase (ver seção "Workflow de Migrations") |
 
 ---
 
@@ -488,7 +523,8 @@ Variáveis sem prefixo são server-only.
 | Início | Paradigma funcional (sem classes) | Código mais previsível, testável e componível |
 | Início | Zod para todas as validações | Validação runtime + tipos TypeScript inferidos automaticamente |
 | Início | Alias `@` para todos os imports | Legibilidade, facilidade de refatoração, consistência |
-| *(adicione aqui)* | *(decisão)* | *(motivo)* |
+| 2026-03 | Supabase como host do PostgreSQL | Free tier generoso, MCP nativo no Claude Code, painel visual, backups automáticos |
+| 2026-03 | Migrations aplicadas via MCP do Supabase (não via `drizzle-kit migrate`) | Porta 5432 bloqueada na rede local; MCP usa API REST (porta 443) e sempre funciona |
 
 ---
 
