@@ -112,24 +112,54 @@ paulinho-project/                  ← raiz do monorepo (pnpm workspaces)
 
 ## Como rodar
 
+**Pré-requisitos:** Node.js >= 20, pnpm >= 9, PostgreSQL local
+
 ```bash
-# Clonar e instalar dependências
+# 1. Clonar e instalar
 git clone https://github.com/pauloVitor2123/paulinho-project.git
 cd paulinho-project
 pnpm install
 
-# Configurar variáveis de ambiente
+# 2. Configurar variáveis de ambiente
 cp .env.example apps/blog-do-pv/.env.local
+# edite o arquivo com suas credenciais
 
-# Rodar o blog em desenvolvimento
+# 3. Rodar migrations
+pnpm --filter blog-do-pv db:migrate
+
+# 4. Subir em desenvolvimento
 pnpm dev
-
-# Rodar todos os testes
-pnpm test
 ```
+
+### Scripts disponíveis
+
+| Comando | O que faz |
+|---------|-----------|
+| `pnpm dev` | Sobe o blog em modo desenvolvimento |
+| `pnpm build` | Build de produção |
+| `pnpm test` | Roda todos os testes |
+| `pnpm lint` | Verifica linting em todo o monorepo |
+| `pnpm format` | Formata todos os arquivos com Prettier |
 
 ---
 
 ## Variáveis de ambiente
 
-Veja [`.env.example`](.env.example) para a lista completa de variáveis necessárias.
+Veja [`.env.example`](.env.example) para a lista completa. As principais:
+
+```bash
+DATABASE_URL=                      # conexão com PostgreSQL
+BETTER_AUTH_SECRET=                # string aleatória >= 32 chars
+BETTER_AUTH_URL=                   # URL pública do app
+CLOUDINARY_CLOUD_NAME=             # para upload de imagens
+NEXT_PUBLIC_UMAMI_WEBSITE_ID=      # analytics
+NEXT_PUBLIC_GISCUS_REPO=           # comentários
+```
+
+---
+
+<div align="center">
+
+Feito com Claude &nbsp;·&nbsp; Revisado por humano &nbsp;·&nbsp; Zero linhas digitadas manualmente
+
+</div>
