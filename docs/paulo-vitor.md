@@ -12,7 +12,7 @@ Rio de Janeiro, Brasil · Disponível para trabalho remoto
 
 ## 👋 Sobre mim
 
-Sou desenvolvedor Full-Stack Sênior com mais de 6 anos de experiência construindo produtos digitais de larga escala — e nos últimos 2 anos, atuando como Tech Lead, liderando times, tomando decisões de arquitetura e garantindo qualidade de entrega em produção.
+Sou desenvolvedor Full-Stack com mais de 7 anos de experiência construindo produtos digitais de larga escala — e nos últimos 2 anos, atuando como Tech Lead, liderando times, tomando decisões de arquitetura e garantindo qualidade de entrega em produção.
 
 Tenho um perfil raro: consigo transitar com naturalidade entre código, produto e estratégia. Escrevo código limpo e testável, tomo decisões de arquitetura, e me comunico com clareza tanto com áreas de negócio quanto com times técnicos. Muitas das minhas responsabilidades como Tech Lead se sobrepõem naturalmente com o papel de PO — levantamento de requisitos, refinamento de histórias, gestão de backlog e alinhamento com stakeholders fazem parte do meu dia a dia.
 
@@ -268,7 +268,7 @@ Transformar necessidades de negócio em entregas concretas. Gestão de backlog, 
 
 | Métrica | Valor |
 |---------|-------|
-| Anos de experiência | 6+ |
+| Anos de experiência | 7+ |
 | Usuários impactados (Exploradores) | 100K+ |
 | Plataformas entregues | Android · iOS · Web |
 | Funcionalidades construídas (Exploradores) | ~80% |

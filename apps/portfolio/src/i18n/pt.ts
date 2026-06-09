@@ -11,7 +11,7 @@ export const pt: Translations = {
     available: "Aberto a novas oportunidades",
     headlinePre: "Eu construo produtos que pessoas de verdade",
     headlineAccent: "usam.",
-    sub: "Desenvolvedor Full-Stack Sênior & Tech Lead com 6+ anos entregando em escala. 100K+ usuários ativos. Ownership total — do spec à produção.",
+    sub: "Desenvolvedor Full-Stack & Tech Lead com 7+ anos entregando em escala. 100K+ usuários ativos. Ownership total — do spec à produção.",
     ctaPrimary: "Ver projetos",
     ctaSecondary: "Vamos conversar",
     location: "Rio de Janeiro, Brasil · Remoto",
@@ -19,10 +19,10 @@ export const pt: Translations = {
   numbers: {
     title: "Impacto em números",
     items: [
-      { value: "6+", label: "anos de código\nem produção" },
+      { value: "7+", label: "anos de código\nem produção" },
       { value: "100K+", label: "usuários ativos em\nplataformas que construí" },
-      { value: "~80%", label: "das funcionalidades\ndo Exploradores" },
-      { value: "83→95%", label: "health score da\nplataforma melhorado" },
+      { value: "~80%", label: "de uma plataforma de\n100K usuários construída por mim" },
+      { value: "83→95%", label: "saúde da plataforma\nem 8 meses como Tech Lead" },
       { value: "3", label: "produtos\ncross-platform entregues" },
     ],
   },
@@ -31,7 +31,7 @@ export const pt: Translations = {
     items: [
       {
         title: "Ownership Total",
-        desc: "Código, deploy, monitoramento, resultado. Pra mim, é tudo o mesmo trabalho. Eu não entrego e desapareço — eu sou dono do resultado.",
+        desc: "Do código ao deploy, do monitoramento ao resultado. Não terceirizo responsabilidade — acompanho até o final.",
       },
       {
         title: "Bridge Técnico-Produto",
@@ -52,10 +52,10 @@ export const pt: Translations = {
     items: [
       {
         name: "Exploradores",
-        company: "Jovens Gênios",
+        company: "EdTech · Full Ownership",
         type: "Edtech · Cross-platform",
         description:
-          "Plataforma de aprendizagem gamificada para alunos do ensino fundamental e médio, construída do zero. Disponível no Android, iOS e Web. Projetei e construí ~80% das funcionalidades — do motor de progressão em grafo a cinco tipos distintos de quiz.",
+          "Projetei e construí ~80% de uma plataforma de aprendizagem gamificada do zero — Android, iOS e Web. Motor de progressão em grafo, cinco tipos distintos de quiz, sistema de gamificação completo.",
         impact:
           "100K+ alunos ativos · Aprovado pelo MEC · Usado em redes públicas e privadas do Brasil",
         tags: ["Flutter", "Dart", "Vue.js", "Node.js", "GraphQL", "Neo4j", "PostgreSQL"],
@@ -76,27 +76,21 @@ export const pt: Translations = {
   },
   experience: {
     title: "Experiência",
+    downloadResume: "Baixar currículo",
     items: [
       {
-        role: "Tech Lead",
-        company: "Jovens Gênios",
-        period: "Nov 2024 – Atual",
-        bullets: [
-          "Referência técnica do time: decisões de arquitetura, padrões de código, code reviews estruturados",
-          "Ponto de contato entre negócio e engenharia — briefings, definição de escopo, gestão de backlog",
-          "Aumentei o health score da plataforma de 83% para 95% em 8 meses",
-          "Gestão direta: 1:1s, feedback estruturado, mentoria técnica e PDI",
-        ],
-      },
-      {
-        role: "Desenvolvedor Full-Stack Sênior",
+        role: "Tech Lead → Desenvolvedor Full-Stack",
         company: "Jovens Gênios",
         period: "Nov 2022 – Atual",
         bullets: [
-          "Construí ~80% do Exploradores — app Flutter multiplataforma com 100K+ usuários ativos",
+          "Promovido a Tech Lead (Nov 2024): decisões de arquitetura, padrões de código, code reviews estruturados",
+          "Ponto de contato entre negócio e engenharia — briefings, definição de escopo, gestão de backlog",
+          "Aumentei o health score da plataforma de 83% para 95% em 8 meses",
+          "Gestão de time: 1:1s, feedback estruturado, mentoria técnica",
+          "Construí ~80% da plataforma — app Flutter multiplataforma com 100K+ usuários ativos",
           "Arquitetei o sistema de gamificação: missões, planetas, XP, recompensas e progressão adaptativa em grafo Neo4j",
           "Construí e mantive APIs GraphQL (Node.js) servindo mobile, web e painel admin",
-          "Adotei Spec-Driven Development + TDD como padrão de engenharia do time",
+          "Estabeleci Spec-Driven Development + TDD como padrão de engenharia do time",
         ],
       },
       {
@@ -114,7 +108,7 @@ export const pt: Translations = {
         company: "Signo Web",
         period: "Ago 2020 – Fev 2021",
         bullets: [
-          "Desenvolvi aplicações web e mobile para clientes de diferentes segmentos",
+          "Desenvolvi aplicações web e mobile para clientes nos segmentos de varejo, serviços e logística.",
         ],
       },
       {
@@ -122,7 +116,7 @@ export const pt: Translations = {
         company: "FSB Comunicação",
         period: "Set 2019 – Jun 2020",
         bullets: [
-          "Desenvolvimento e manutenção de sistemas internos para agência de comunicação de grande porte",
+          "Desenvolvimento e manutenção de ferramentas internas para uma das maiores agências de comunicação do Brasil.",
         ],
       },
       {
@@ -130,7 +124,7 @@ export const pt: Translations = {
         company: "Banco do Brasil",
         period: "Jun 2018 – Ago 2019",
         bullets: [
-          "Automação de processos operacionais internos com VBA e Selenium",
+          "Automatizei fluxos operacionais internos com VBA e Selenium em estágio no maior banco público do Brasil.",
         ],
       },
     ],
@@ -153,7 +147,7 @@ export const pt: Translations = {
     items: [
       {
         phase: "Antes de codar",
-        title: "Eu grillo meus specs",
+        title: "Eu stresso meus specs",
         desc: "Descrevo os requisitos e deixo a IA desafiar minhas suposições, expor edge cases e sugerir alternativas arquiteturais. Isso previne retrabalho downstream — o mais caro de todos.",
       },
       {
@@ -170,7 +164,7 @@ export const pt: Translations = {
   },
   contact: {
     title: "Pronto para entregar algo real.",
-    sub: "Busco papéis onde eu possa ter ownership end-to-end — da definição do problema às métricas em produção. Se é isso que você precisa, vamos conversar.",
+    sub: "Tenho ownership total — da definição do problema às métricas em produção. Se é isso que seu time precisa, vamos conversar.",
     email: "paulovitor2123@gmail.com",
     linkedInLabel: "LinkedIn",
     githubLabel: "GitHub",

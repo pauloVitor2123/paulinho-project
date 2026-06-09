@@ -21,11 +21,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Paulo Vitor — Senior Full-Stack Developer & Tech Lead",
   description:
-    "Senior Full-Stack Developer & Tech Lead with 6+ years shipping at scale. 100K+ active users. Based in Rio de Janeiro, available for remote work.",
+    "Senior Full-Stack Developer & Tech Lead with 7+ years shipping at scale. 100K+ active users. Based in Rio de Janeiro, available for remote work.",
   openGraph: {
     title: "Paulo Vitor — Senior Full-Stack Developer & Tech Lead",
     description:
-      "Senior Full-Stack Developer & Tech Lead with 6+ years shipping at scale. 100K+ active users. Based in Rio de Janeiro, available for remote work.",
+      "Senior Full-Stack Developer & Tech Lead with 7+ years shipping at scale. 100K+ active users. Based in Rio de Janeiro, available for remote work.",
     type: "website",
   },
   keywords: [

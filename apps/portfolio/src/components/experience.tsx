@@ -1,7 +1,18 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { FadeUp } from "./fade-up";
 import { useLang } from "@/i18n/context";
+
+function DownloadIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <polyline points="7 10 12 15 17 10" />
+      <line x1="12" y1="15" x2="12" y2="3" />
+    </svg>
+  );
+}
 
 export function Experience() {
   const { t } = useLang();
@@ -50,6 +61,27 @@ export function Experience() {
             ))}
           </div>
         </div>
+
+        {/* Resume download */}
+        <motion.div
+          className="mt-14 flex justify-center"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <motion.a
+            href="/curriculo_paulo_techlead.pdf"
+            download
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-border text-sm font-medium text-muted hover:text-foreground hover:border-accent/50 transition-colors duration-200 cursor-pointer"
+            animate={{ scale: [1, 1.04, 1] }}
+            transition={{ delay: 0.8, duration: 0.5, ease: "easeInOut" }}
+            aria-label="Download resume PDF"
+          >
+            <DownloadIcon />
+            {t.experience.downloadResume}
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   );

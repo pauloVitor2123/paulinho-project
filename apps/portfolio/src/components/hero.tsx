@@ -51,6 +51,17 @@ export function Hero() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 pt-24 pb-16 text-center">
+        {/* Profile picture */}
+        <motion.div {...fadeUp(0.05)} className="mb-8 flex justify-center">
+          <div className="relative w-24 h-24 rounded-full overflow-hidden ring-2 ring-accent/30 ring-offset-2 ring-offset-background">
+            <img
+              src="/profile_picture.jpeg"
+              alt="Paulo Vitor"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </motion.div>
+
         {/* Available badge */}
         <motion.div {...fadeUp(0.1)} className="mb-8 inline-flex">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-success/30 bg-success/8 text-success text-sm font-medium">

@@ -9,7 +9,7 @@ export const en = {
     available: "Open to new opportunities",
     headlinePre: "I build products that people",
     headlineAccent: "actually use.",
-    sub: "Senior Full-Stack Developer & Tech Lead with 6+ years shipping at scale. 100K+ active users. Full ownership — from spec to production.",
+    sub: "Senior Full-Stack Developer & Tech Lead with 7+ years shipping at scale. 100K+ active users. Full ownership — from spec to production.",
     ctaPrimary: "See my work",
     ctaSecondary: "Let's talk",
     location: "Rio de Janeiro, Brazil · Remote",
@@ -17,10 +17,10 @@ export const en = {
   numbers: {
     title: "Impact by the numbers",
     items: [
-      { value: "6+", label: "years of production\ncode" },
+      { value: "7+", label: "years of production\ncode" },
       { value: "100K+", label: "active users on\nplatforms I built" },
-      { value: "~80%", label: "of Exploradores\nbuilt by me" },
-      { value: "83→95%", label: "platform health\nscore improved" },
+      { value: "~80%", label: "of a 100K-user platform\ndesigned & built by me" },
+      { value: "83→95%", label: "platform health\nin 8 months as Tech Lead" },
       { value: "3", label: "cross-platform\nproducts shipped" },
     ],
   },
@@ -29,7 +29,7 @@ export const en = {
     items: [
       {
         title: "Full Ownership",
-        desc: "Code, deploy, monitor, deliver results. For me, it's all the same job. I don't hand off and walk away — I own the outcome.",
+        desc: "From code to deploy, from monitoring to results. I don't hand off responsibility — I see things through.",
       },
       {
         title: "Tech-Product Bridge",
@@ -50,10 +50,10 @@ export const en = {
     items: [
       {
         name: "Exploradores",
-        company: "Jovens Gênios",
+        company: "EdTech · Full Ownership",
         type: "Edtech · Cross-platform",
         description:
-          "Gamified learning platform for K-12 students built from scratch. Available on Android, iOS, and Web. I designed and built approximately 80% of its features — from the graph-based progression engine to five distinct quiz types.",
+          "Designed and built ~80% of a gamified K-12 learning platform from scratch — Android, iOS, and Web. Graph-based progression engine, five distinct quiz types, full gamification system.",
         impact:
           "100K+ active students · Approved by MEC · Used in public and private schools across Brazil",
         tags: ["Flutter", "Dart", "Vue.js", "Node.js", "GraphQL", "Neo4j", "PostgreSQL"],
@@ -74,27 +74,21 @@ export const en = {
   },
   experience: {
     title: "Experience",
+    downloadResume: "Download résumé",
     items: [
       {
-        role: "Tech Lead",
-        company: "Jovens Gênios",
-        period: "Nov 2024 – Present",
-        bullets: [
-          "Technical reference: architecture decisions, code standards, structured code reviews",
-          "Bridge between business and engineering — briefings, scope definition, backlog management",
-          "Raised platform health score from 83% to 95% in 8 months",
-          "Direct team management: 1:1s, structured feedback, technical mentoring",
-        ],
-      },
-      {
-        role: "Senior Full-Stack Developer",
+        role: "Tech Lead → Senior Full-Stack Developer",
         company: "Jovens Gênios",
         period: "Nov 2022 – Present",
         bullets: [
-          "Built ~80% of Exploradores — Flutter multi-platform app with 100K+ active users",
+          "Promoted to Tech Lead (Nov 2024): architecture decisions, code standards, structured code reviews",
+          "Bridge between business and engineering — scope definition, briefings, backlog management",
+          "Raised platform health score from 83% to 95% in 8 months",
+          "Team management: 1:1s, structured feedback, technical mentoring",
+          "Built ~80% of the platform — Flutter cross-platform app with 100K+ active users",
           "Architected gamification system: missions, planets, XP, rewards, adaptive progression on a Neo4j graph",
-          "Built and maintained GraphQL APIs (Node.js) serving mobile, web, and admin panel clients",
-          "Adopted Spec-Driven Development + TDD as the team's engineering standard",
+          "Built and maintained GraphQL APIs (Node.js) serving mobile, web, and admin clients",
+          "Established Spec-Driven Development + TDD as the team's engineering standard",
         ],
       },
       {
@@ -112,7 +106,7 @@ export const en = {
         company: "Signo Web",
         period: "Aug 2020 – Feb 2021",
         bullets: [
-          "Developed web and mobile apps for clients across different verticals",
+          "Built web and mobile applications for clients across retail, services, and logistics verticals.",
         ],
       },
       {
@@ -120,7 +114,7 @@ export const en = {
         company: "FSB Comunicação",
         period: "Sep 2019 – Jun 2020",
         bullets: [
-          "Development and maintenance of internal systems for a large-scale communications agency",
+          "Development and maintenance of internal tools for one of Brazil's largest communications agencies.",
         ],
       },
       {
@@ -128,7 +122,7 @@ export const en = {
         company: "Banco do Brasil",
         period: "Jun 2018 – Aug 2019",
         bullets: [
-          "Automated internal operational processes using VBA and Selenium",
+          "Automated internal operational workflows using VBA and Selenium during internship at Brazil's largest state-owned bank.",
         ],
       },
     ],
@@ -168,7 +162,7 @@ export const en = {
   },
   contact: {
     title: "Ready to ship something real.",
-    sub: "I'm looking for roles where I can own features end-to-end — from problem definition to production metrics. If that sounds like what you need, let's talk.",
+    sub: "I take full ownership — from problem definition to production metrics. If that's what your team needs, let's talk.",
     email: "paulovitor2123@gmail.com",
     linkedInLabel: "LinkedIn",
     githubLabel: "GitHub",
